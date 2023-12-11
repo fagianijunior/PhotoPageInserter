@@ -1,0 +1,141 @@
+{
+    "name": "calendar_2024",
+    "pages": [  
+        {
+            "filename": "pages/calendar_2024_1.png",
+            "pictures": [
+                {
+                    "rotate": 0,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 288,
+                        "y": 329
+                    }
+                }, {
+                    "rotate": 0,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 288,
+                        "y": 1439
+                    }
+                }, {
+                    "rotate": 180,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 2542,
+                        "y": 329
+                    }
+                }, {
+                    "rotate": 180,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 2542,
+                        "y": 1439
+                    }
+                }
+            ]
+        }, {
+            "filename": "pages/calendar_2024_2.png",
+            "pictures": [
+                {
+                    "rotate": 0,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 288,
+                        "y": 329
+                    }
+                }, {
+                    "rotate": 0,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 288,
+                        "y": 1439
+                    }
+                }, {
+                    "rotate": 180,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 2542,
+                        "y": 329
+                    }
+                }, {
+                    "rotate": 180,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 2542,
+                        "y": 1439
+                    }
+                }
+            ]
+        }, {
+            "filename": "pages/calendar_2024_3.png",
+            "pictures": [
+                {
+                    "rotate": 0,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 288,
+                        "y": 329
+                    }
+                }, {
+                    "rotate": 0,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 288,
+                        "y": 1439
+                    }
+                }, {
+                    "rotate": 180,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 2542,
+                        "y": 329
+                    }
+                }, {
+                    "rotate": 180,
+                    "size": {
+                        "width": 712,
+                        "height": 595
+                    },
+                    "possition": {
+                        "x": 2542,
+                        "y": 1439
+                    }
+                }
+            ]
+        }
+    ]
+}
