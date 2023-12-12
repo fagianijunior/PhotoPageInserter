@@ -1,0 +1,7 @@
+__pycache__
+models/*
+!models/calendar_2024/
+output/*
+!output/.keep
+photos/*
+

@@ -27,7 +27,8 @@ def main():
 
     layout = [
         [sg.Text("Select the model:"), sg.Combo(models_dir, enable_events=True, key="-COMBOMODELS-")],
-        [sg.Text("Select photos dir:"), sg.FolderBrowse(key="-FOLDERPHOTOS-", initial_folder='photos')],
+        [sg.Text("Select photos dir:")],
+        [sg.FolderBrowse(key="-FOLDERPHOTOS-", initial_folder='photos'), sg.Text("")],
         [sg.Button("Gerar")]
     ]
 
@@ -35,9 +36,12 @@ def main():
 
     while True:
         event, values = window.read()
+        print(event, values)
 
         if event == sg.WINDOW_CLOSED:
             break
+        elif event == "-FOLDERPHOTOS-":
+            print(values)
         elif event == "-COMBOMODELS-":
             selected_model = values["-COMBOMODELS-"]
         elif event == "Gerar":
