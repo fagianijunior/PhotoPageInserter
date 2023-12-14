@@ -30,12 +30,13 @@ def crop_and_resize(img, w, h):
 
         return img
 
-def generate_calendar(model, photos_dir):
+def generate_calendar(model, photos_dir, same_photo=False):
     pic_idx = 0
     images = [cv2.imread(os.path.join(photos_dir, photo_name)) for photo_name in sorted(os.listdir(photos_dir))]
 
     for page_idx, page in enumerate(model.pages):
         page_image = cv2.imread(os.path.join("models", model.name, page['filename']))
+        
         for picture in page['pictures']:
             picture_image = images[pic_idx]
             
@@ -48,7 +49,10 @@ def generate_calendar(model, photos_dir):
             if picture['rotate'] == 180:
                 picture_cropped = cv2.rotate(picture_cropped, cv2.ROTATE_180)
 
-            page_image[x:x + picture['size']['height'], y:y + picture['size']['width']] = picture_cropped
-            pic_idx = pic_idx + 1
+            page_image[y:y + picture['size']['height'], x:x + picture['size']['width']] = picture_cropped
+            
+            if same_photo == False:
+                pic_idx = pic_idx + 1
+
         cv2.imwrite(os.path.join(output_dir, "page_" + str(page_idx) + ".png"), page_image)
     pic_idx = 0
